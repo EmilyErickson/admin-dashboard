@@ -1,10 +1,78 @@
 body {
-    background-color: lightgreen;
     margin: 0;
     padding: 0;
-    
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+    border: 3px solid green;
 }
 
-.test {
-    background-color: lightcoral;
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 8fr 6fr;
+    border: 2px solid black;
+
+}
+
+.sidebar > div, .sidebar-menu > ul {
+    border: 2px solid black;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: lightgoldenrodyellow ;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-bar {
+    border: 2px solid blue;
+    background-color: rgba(0, 255, 255, 0.18);
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.user-info {
+    border: 2px solid purple;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-page {
+    display: grid;
+    background-color: lightpink;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    border: 2px solid brown;
+}
+.cards-sidebar {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.announcement-card {
+    border: 2px solid pink;
+}
+
+.trending-card {
+    border: 2px solid slateblue;
 }
