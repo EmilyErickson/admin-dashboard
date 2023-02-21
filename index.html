@@ -9,31 +9,36 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="sidebar-header">Dashboard</div>
+        <div class="sidebar-header"><img src="images/dashboard.svg" alt="dashboard">
+            <div class="text">Dashboard</div></div>
         <div class="sidebar-menu">
-            <ul class="main-menu">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+            <ul class="menu main-menu">
+                <li><img class="icon" src="images/home.svg" alt="house"> Home</li>
+                <li><img class="icon" src="images/profile.svg" alt="profile">Profile</li>
+                <li><img class="icon" src="images/message.svg" alt="message logo">Messages</li>
+                <li><img class="icon" src="images/history.svg" alt="clock">History</li>
+                <li><img class="icon" src="images/tasks.svg" alt="task logo">Tasks</li>
+                <li><img class="icon" src="images/communities.svg" alt="people logo">Communities</li>
             </ul>                
-            <ul class="lower-menu">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+            <ul class="menu help-menu">
+                <li><img class="icon" src="images/settings.svg" alt="settings">Settings</li>
+                <li><img class="icon" src="images/support.svg" alt="support logo">Support</li>
+                <li><img class="icon" src="images/privacy.svg" alt="privacy logo">Privacy</li>
             </ul>
         </div>
     </div>
     <div class="header">
         <div class="search-bar">
-            <input type="text" placeholder="Searchbar">
-            <div>Icon</div>
-            <div><div>icon</div> Morgan Oakley</div>
+            <img class="icon" src="images/search.svg" alt="search">
+            <input type="text">
+            <div class="header-name"><img class="icon" src="images/bell.svg" alt="alert"><img src="images/duck.jpg" class="duck" alt="duck">Morgan Oakley</div>
         </div>
         <div class="user-info">
-            <div class="user-welcome">Hi there, Morgan Oakley (@morgan)</div>
+            <div class="user-welcome">
+                <img src="images/duck.jpg" class="welcome duck" alt="duck">
+                <div class="welcome-greeting">Hi there,</div>
+                <div class="welcome-name">Morgan Oakley (@morgan)</div>
+            </div>
             <div class="user-buttons">
                 <button>New</button>
                 <button>Upload</button>
@@ -42,28 +47,85 @@
         </div>
     </div>
     <div class="main-page">
+        <div class="main-title">Your Projects</div>
         <div class="main-cards">
-            <div class="card">Super Cool Project</div>
-            <div class="card">Less Cool Project</div>
-            <div class="card">Impossible App</div>
-            <div class="card">Easy Peasy App</div>
-            <div class="card">Ad Blocker</div>
-            <div class="card">Money Maker</div>
+            <div class="card">Super Cool Project
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis rhoncus urna neque viverra justo nec.</div>
+                <div class="icons"><img class="icon" src="images/star-plus-outline.svg" alt="star">
+                    <img class="icon" src="images/eye-plus-outline.svg" alt="eye">
+                    <img class="icon" src="images/fork.svg" alt="fork"></div></div>
+            <div class="card">Less Cool Project
+                <div class="text">Velit scelerisque in dictum non consectetur a erat. Fusce id velit ut tortor. Ultrices neque ornare aenean euismod elementum. Nulla porttitor massa id neque aliquam vestibulum. Morbi blandit cursus risus at ultrices mi.</div>
+                <div class="icons"><img class="icon" src="images/star-plus-outline.svg" alt="star">
+                    <img class="icon" src="images/eye-plus-outline.svg" alt="eye">
+                    <img class="icon" src="images/fork.svg" alt="fork"></div></div>
+            <div class="card">Impossible App
+                <div class="text">Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Tristique magna sit amet purus. Integer enim neque volutpat ac tincidunt vitae semper quis. Etiam non quam lacus suspendisse faucibus.</div>
+                <div class="icons"><img class="icon" src="images/star-plus-outline.svg" alt="star">
+                    <img class="icon" src="images/eye-plus-outline.svg" alt="eye">
+                    <img class="icon" src="images/fork.svg" alt="fork"></div></div>
+            <div class="card">Easy Peasy App
+                <div class="text">Sed vulputate mi sit amet mauris commodo quis. In iaculis nunc sed augue. Nam libero justo laoreet sit amet. Tempor id eu nisl nunc mi ipsum faucibus vitae.</div>
+                <div class="icons"><img class="icon" src="images/star-plus-outline.svg" alt="star">
+                    <img class="icon" src="images/eye-plus-outline.svg" alt="eye">
+                    <img class="icon" src="images/fork.svg" alt="fork"></div></div>
+            <div class="card">Ad Blocker
+                <div class="text">Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Faucibus ornare suspendisse sed nisi lacus sed viverra. At tempor commodo ullamcorper a lacus. Natoque penatibus et magnis dis. Interdum velit euismod in pellentesque.</div>
+                <div class="icons"><img class="icon" src="images/star-plus-outline.svg" alt="star">
+                    <img class="icon" src="images/eye-plus-outline.svg" alt="eye">
+                    <img class="icon" src="images/fork.svg" alt="fork"></div></div>
+            <div class="card">Money Maker
+                <div class="text">Auctor eu augue ut lectus arcu bibendum. At urna condimentum mattis pellentesque id. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus.</div>
+                <div class="icons"><img class="icon" src="images/star-plus-outline.svg" alt="star">
+                    <img class="icon" src="images/eye-plus-outline.svg" alt="eye">
+                    <img class="icon" src="images/fork.svg" alt="fork"></div></div>
         </div>
         <div class="cards-sidebar">
             <div class="announcements">
-                Announcements
-                <div class="announcement-card">Site Maintenence</div>
-                <div class="announcement-card">Community Share Day</div>
-                <div class="announcement-card">Updated Privacy Policy</div>
-            </div>
+                <div class="title">Announcements</div>
+                <div class="announcement-cards">
+                    <div class="announcement-card maintenence">Site Maintenence
+                        <div class="text">Consequat semper viverra nam libero justo laoreet sit amet. Vitae suscipit tellus mauris a diam maecenas sed.</div>
+                    </div>
+                    <div class="announcement-card community">Community Share Day
+                        <div class="text">Gravida neque convallis a cras semper auctor neque vitae tempus. Scelerisque purus semper eget duis at tellus. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris.</div>
+                    </div>
+                    <div class="announcement-card privacy">Updated Privacy Policy
+                        <div class="text">Vestibulum lectus mauris ultrices eros in cursus. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+                    </div>
+                </div>
+                </div>
             <div class="trending">
-                Trending
-                <div class="trending-card">@tegan</div>
-                <div class="trending-card">@morgan</div>
-                <div class="trending-card">@kendall</div>
+                <div class="title">Trending</div>
+                <div class="trending-cards">
+                    <div class="trending-card">
+                        <img src="images/penguin.jpg" alt="penguin">
+                        <div class="name">@teagan</div>
+                        <div class="text">World Peace Builder</div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="images/duck.jpg" alt="duck">
+                        <div class="name">@morgan</div>
+                        <div class="text">Super Cool Project</div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="images/flower.jpg" alt="flower">
+                        <div class="name">@kendall</div>
+                        <div class="text">Life Changing App</div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="images/parrot.jpg" alt="parrot">
+                        <div class="name">@alex</div>
+                        <div class="text">No Traffic Maker</div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="credits">Photos by <a href="https://unsplash.com/@kevinmueller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Mueller</a> on <a href="https://unsplash.com/photos/aeNg4YA41P8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <a href="https://unsplash.com/@aarngiri?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> - AARN GIRI</a> on <a href="https://unsplash.com/photos/3tYZjGSBwbk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <a href="https://unsplash.com/es/@shaunmcreatives?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> - Shaun Meintjes</a> on <a href="https://unsplash.com/photos/XJV36au6YG0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <a href="https://unsplash.com/@timothycdykes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> - Timothy Dykes</a> on <a href="https://unsplash.com/photos/LhqLdDPcSV8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     </div>
 </body>
 </html>
