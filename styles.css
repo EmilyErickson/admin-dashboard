@@ -1,78 +1,299 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
-    border: 3px solid green;
+    grid-template-rows: 1fr 8fr 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
     grid-column: 1;
     grid-row: 1 / 3;
-    background-color: lightblue;
+    background-color: #0369a1;
+    color: #e0f2fe;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 1fr 8fr 6fr;
-    border: 2px solid black;
+    grid-template-rows: 1fr 10fr;
 
 }
 
-.sidebar > div, .sidebar-menu > ul {
-    border: 2px solid black;
+.sidebar img {
+    height: 20px;
+    filter: invert(99%) sepia(45%) saturate(1243%) hue-rotate(173deg) brightness(100%) contrast(100%);
 }
+
+.sidebar-header {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-items: center;
+}
+.sidebar-header .text {
+    padding-left: 20px;
+}
+.sidebar-header > img {
+    height: 30px;
+    margin-left: 8px;
+}
+.sidebar-menu {
+    display: grid;
+    grid-template-rows: 2fr 1.25fr 1fr;
+    font-size: 1rem;
+}
+.menu {
+    padding: 8px;
+    display: grid;
+    list-style-type: none;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-self: start;
+    align-self: center;
+}
+
 
 .header {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 1 / 2;
-    background-color: lightgoldenrodyellow ;
+    background-color: #f0f9ff;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.header .icon {
+    filter: invert(20%) sepia(85%) saturate(865%) hue-rotate(167deg) brightness(95%) contrast(92%);
+    height: 25px;
+    align-self: center;
 }
 
 .search-bar {
-    border: 2px solid blue;
-    background-color: rgba(0, 255, 255, 0.18);
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 30px 500px 1fr;
+    align-content: center;
+    padding: 0px 15px;
+    color: #0c4a6e;
+}
+
+.search-bar input {
+    height: 20px;
+    align-self: center;
+    background-color: #0c4a6e;
+    border: none;
+    border-radius: 45px;
+    margin-left: 12px;
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-right: 50px;
+    color: #0c4a6e;
+}
+.duck {
+    height: 50px;
+    width: 50px;
+    border-radius: 180px;
 }
 
 .user-info {
-    border: 2px solid purple;
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 2fr 1fr;
+    color: #0c4a6e;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.user-welcome {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.user-welcome > img {
+    grid-row: 1 / 3;
+    height: 60px;
+    width: 60px;
+    place-self: center;
+    border: .5px solid #0c4a6e;
+}
+.welcome-name {
+    font-size: 1.25rem;
+    align-self: center;
+    margin-left: 12px;
+}
+
+.welcome-greeting {
+    font-size: .75rem;
+    margin-left: 12px;
+    align-self: flex-end;
+}
+.user-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.user-buttons button {
+    background-color: #0c4a6e;
+    color: #f0f9ff;
+    width: 100px;
+    height: 30px;
+    border-radius: 180px;
+    border: none;
+    margin-right: 30px;
 }
 
 .main-page {
     display: grid;
-    background-color: lightpink;
+    background-color: #bae6fd;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr;
+    padding: 15px;
+    
+}
+
+.main-title {
+    grid-column: 1 / 2;
+    font-size: 1.5rem;
+    align-self: center;
 }
 
 .main-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 2;
+    gap: 12px;
 }
 
 .card {
-    width: 150px;
-    height: 150px;
-    border: 2px solid brown;
+    background-color: white;
+    width: 280px;
+    height: 130px;
+    border-left: 10px solid #0c4a6e;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 25px 1fr 30px;
+    padding: 12px;
+    box-shadow: 0 8px 6px -6px #0c4a6e;
+
 }
+
+.card .text {
+    font-size: .75rem;
+    font-weight: normal;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #353f44;
+    overflow: scroll;
+}
+
+.card .icon {
+    height: 20px;
+    width: 20px;
+    padding: 8px;
+}
+.icons {
+    justify-self: right;
+}
+
 .cards-sidebar {
-    background-color: aquamarine;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
+}
+
+.announcement-cards, .trending-cards {
+    background-color: white;
+    width: 195px;
+    height: 215px;
+    border-radius: 10px;
+    font-size: .8rem;
+    font-weight: 800;
+    box-shadow: 0 8px 6px -6px #0c4a6e;
+}
+
+.announcement-cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 15px;
+}
+.announcements .title, .trending .title {
+    grid-column: 2 / 3;
+    font-size: 1.5rem;
+    align-self: center;
+    padding: 10px;
 }
 
 .announcement-card {
-    border: 2px solid pink;
+    height: 60%;
+    padding: 5px;
+    overflow: hidden;
+    word-break: break-all;
+    align-self: center;
+}
+
+.community, .privacy {
+    border-top: 1px solid #353f44;
+}
+
+.announcement-card .text {
+    font-size: .6rem;
+    color: #353f44;
+    font-weight: normal;
+}
+
+.trending-cards {
+    padding: 15px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .trending-card {
-    border: 2px solid slateblue;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    align-content: center;
+}
+
+.trending-card img {
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 180px;
+    grid-row: 1 / 3;
+}
+
+.trending-card .name {
+    align-self: end;
+}
+
+.trending-card .text {
+    font-size: .6rem;
+    color: #353f44;
+    font-weight: normal;
+}
+
+.credits {
+    grid-column: 1 / 4;
+    color: black;
+    font-size: xx-small;
+    place-self: center;
+}
+
+.credits > a {
+    color: black;
 }
